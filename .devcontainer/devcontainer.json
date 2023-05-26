@@ -1,0 +1,129 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/javascript-node
+{
+  "name": "Health Tracker Frontend Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    // Update 'VARIANT' to pick a Node version: 18, 16, 14.
+    // Append -bullseye or -buster to pin to an OS version.
+    // Use -bullseye variants on local arm64/Apple Silicon.
+    "args": {
+      "VARIANT": "18-bullseye"
+    }
+  },
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "EditorConfig.EditorConfig",
+        "GitHub.remotehub",
+        "GitHub.vscode-pull-request-github",
+        "gruntfuggly.todo-tree",
+        "mechatroner.rainbow-csv",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.vscode-js-profile-flame",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode.remote-explorer",
+        "ms-vscode.remote-repositories",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vsliveshare.vsliveshare",
+        "oderwat.indent-rainbow",
+        "orta.vscode-jest",
+        "quicktype.quicktype",
+        "rangav.vscode-thunder-client",
+        "streetsidesoftware.code-spell-checker",
+        "timonwong.shellcheck",
+        "tlahmann.alex-linter",
+        "tyriar.sort-lines",
+        "usernamehw.errorlens"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "editor.codeActionsOnSave": [
+          "source.formatDocument",
+          "source.fixAll.eslint"
+        ],
+        "editor.formatOnSave": false,
+        "editor.rulers": [80],
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {
+          "*.ts": "$(capture).test.ts, $(capture).test.tsx",
+          "*.tsx": "$(capture).test.ts, $(capture).test.tsx"
+        },
+        "files.exclude": {
+          "**/node_modules": false,
+          "node_modules": true,
+          "*[!test]**/node_modules": true
+        },
+        "files.trimTrailingWhitespace": true,
+        "indentRainbow.indicatorStyle": "light",
+        "terminal.integrated.scrollback": 10000,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "todo-tree.filtering.excludeGlobs": [
+          "**/node_modules",
+          "**/dist",
+          "**/compiled"
+        ],
+        "todo-tree.general.tags": [
+          "BUG",
+          "HACK",
+          "FIXME",
+          "TODO",
+          "XXX",
+          "[ ]",
+          "[x]",
+          "TODO-APP"
+        ],
+        "typescript.surveys.enabled": false
+      }
+    }
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "pnpm install",
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "os-provided"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "lts"
+    }
+  },
+  "remoteEnv": {
+    "DISPLAY": ":0"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Health Tracker Frontend",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "updateContentCommand": "pnpm install",
+  "waitFor": "updateContentCommand"
+}
