@@ -20,8 +20,8 @@ RUN \
 
 # 2. Rebuild the source code only when needed
 FROM node:18-alpine AS builder
-ARG DATABASE_URL
-ARG NEXT_PUBLIC_CLIENTVAR
+# ARG DATABASE_URL
+# ARG NEXT_PUBLIC_CLIENTVAR
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest yarn@stable --activate
 COPY --from=deps /app/node_modules ./node_modules
