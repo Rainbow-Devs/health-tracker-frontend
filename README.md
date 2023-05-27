@@ -1,7 +1,7 @@
 # Health Tracker Frontend
 
-This is the frontend webapp for the Rainbow Devs Health Tracker application.
-For the backend app, that can be found at
+This is the frontend webapp for the Rainbow Devs Health Tracker application. For
+the backend app, that can be found at
 [Rainbow-Devs/health-tracker-backend](https://github.com/Rainbow-Devs/health-tracker-backend).
 
 ## Installation
@@ -23,11 +23,15 @@ First, run the development server:
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.tsx`. The page
+auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses
+[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
+automatically optimize and load Inter, a custom Google Font.
 
 ## Running with Docker
 
@@ -46,7 +50,7 @@ services:
     container_name: ht-frontend
     image: rainbow-devs/ht-frontend
     ports:
-      - "80:3000"
+      - "3000:3000"
 ```
 
 From there, you can follow these steps to build and run the container image:
@@ -56,8 +60,8 @@ docker compose build --pull
 docker compose up -d
 ```
 
-Finally, when you're done, use this command to stop the container and remove
-the container image:
+Finally, when you're done, use this command to stop the container and remove the
+container image:
 
 ```bash
 docker compose down
@@ -67,13 +71,20 @@ docker compose down
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
+  features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out
+[the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
+feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the
+[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our
+[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
+details.

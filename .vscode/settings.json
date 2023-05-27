@@ -1,0 +1,46 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+  "editor.formatOnSave": false,
+  "editor.rulers": [80],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "$(capture).test.ts, $(capture).test.tsx",
+    "*.tsx": "$(capture).test.ts, $(capture).test.tsx"
+  },
+  "files.exclude": {
+    "**/node_modules": false,
+    "node_modules": true,
+    "*[!test]**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "indentRainbow.indicatorStyle": "light",
+  "terminal.integrated.scrollback": 10000,
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules",
+    "**/dist",
+    "**/compiled"
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "TODO-APP"
+  ],
+  "typescript.surveys.enabled": false
+}
