@@ -16,7 +16,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Actual Behaviour
+      label: Actual Behavior
       description: Describe what the code currently does.
     validations:
       required: true
