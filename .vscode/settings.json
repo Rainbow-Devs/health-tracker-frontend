@@ -42,5 +42,9 @@
     "[x]",
     "TODO-APP"
   ],
-  "typescript.surveys.enabled": false
+  "typescript.surveys.enabled": false,
+  "cSpell.words": [
+    "Devs",
+    "tailwindcss"
+  ]
 }
