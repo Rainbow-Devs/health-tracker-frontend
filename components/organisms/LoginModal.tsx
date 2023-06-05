@@ -7,7 +7,7 @@ import { DialogCloseButton } from "@atoms/DialogCloseButton";
 import { LoginPrompt } from "@molecules/LoginPrompt";
 
 const dialogStyles =
-  "fixed inset-3 z-50 m-auto flex h-fit max-h-[calc(100vh_-_2_*_0.75rem)] max-w-xs flex-col gap-4 overflow-auto rounded-xl bg-white p-4 text-[hsl(204_10%_10%)] shadow-2xl focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-[hsl(204_100%_40%)] dark:border dark:border-solid dark:border-[hsl(204_3%_26%)] dark:bg-[hsl(204_3%_18%)] dark:text-white sm:inset-y-[10vh] sm:mt-0 sm:max-h-[80vh] sm:w-[420px] sm:rounded-2xl sm:p-6";
+  "fixed inset-3 z-50 m-auto flex h-fit max-h-[calc(100vh_-_2_*_0.75rem)] max-w-xs flex-col gap-4 overflow-auto rounded-xl bg-white p-4 text-[hsl(204_10%_10%)] shadow-2xl focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-[hsl(204_100%_40%)] dark:bg-gray-400 dark:text-white sm:inset-y-[10vh] sm:mt-0 sm:max-h-[80vh] sm:w-[420px] sm:rounded-2xl sm:p-6";
 
 export const LoginModal = () => {
   const router = useRouter();

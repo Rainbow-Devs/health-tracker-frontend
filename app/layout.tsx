@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gradient-to-br from-[#faf8fb] to-[#eeebf4] text-gray-950 antialiased dark:from-[#41295a] dark:to-[#2F0743] dark:text-gray-100">
+      <body className="min-h-screen bg-gradient-to-br from-[#faf8fb] to-[#eeebf4] text-gray-950 antialiased dark:from-gray-300 dark:to-gray-400">
         <NavBar />
         {children}
         {authModal}

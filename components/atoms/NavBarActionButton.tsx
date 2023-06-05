@@ -25,7 +25,7 @@ export const buttonVariants = cva(
       textColor: {
         inherit: "text-inherit",
         white: "text-white",
-        gray: "text-medium-gray dark:text-white"
+        gray: "text-gray-400 dark:text-white"
       }
     },
     defaultVariants: {
