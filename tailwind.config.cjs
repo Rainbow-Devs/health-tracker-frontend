@@ -17,9 +17,13 @@ module.exports = {
         "alert-orange": "#EB6600",
         "alert-red": "#BC1C21",
         "dark": "#090E34",
-        "dark-gray": "#637381",
-        "light-gray": "#BFBFBF",
-        "medium-gray": "#151828",
+        gray: {
+          100: "#BFBFBF",
+          200: "#637381",
+          300: '#252a30',
+          400: '#171b1e',
+          500: "#151828",
+        },
         "primary": "#3056D3",
         "secondary": "#6F35A5",
         "white": "#FFF"
