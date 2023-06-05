@@ -34,8 +34,8 @@
     "eslint:fix": "next lint --fix",
     "alex:check": "alex .",
     "format": "pnpm prettier:overwrite",
-    "prettier:check": "prettier --check ./app ./components",
-    "prettier:overwrite": "prettier --write ./app ./components",
+    "prettier:check": "prettier --check ./app ./components *.cjs",
+    "prettier:overwrite": "prettier --write ./app ./components *.cjs",
     "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store"
   },
   "dependencies": {
