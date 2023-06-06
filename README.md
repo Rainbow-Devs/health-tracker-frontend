@@ -1,8 +1,14 @@
-# Health Tracker Frontend
+# WellPath Frontend
 
-This is the frontend webapp for the Rainbow Devs Health Tracker application. For
-the backend app, that can be found at
+This is the frontend webapp for WellPath, the Rainbow Devs Health Tracker
+application. For the backend app, that can be found at
 [Rainbow-Devs/health-tracker-backend](https://github.com/Rainbow-Devs/health-tracker-backend).
+
+## Prerequisites
+
+Please follow the guides in Notion for setting up your computer for web
+development. There are separate guides for macOS and Windows. Once your
+environment is set up, follow these steps to start work on this repository:
 
 ## Installation
 
@@ -67,7 +73,7 @@ container image:
 docker compose down
 ```
 
-## Learn More
+## Next.js Resources
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -78,13 +84,3 @@ To learn more about Next.js, take a look at the following resources:
 You can check out
 [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
 feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the
-[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
-
-Check out our
-[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
-details.
