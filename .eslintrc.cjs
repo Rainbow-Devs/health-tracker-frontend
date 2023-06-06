@@ -6,65 +6,33 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:github/recommended",
-    "plugin:import/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:tailwindcss/recommended",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
-  ],
+  extends: ["eslint:recommended", "plugin:github/recommended", "plugin:import/recommended", "plugin:jsx-a11y/recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:react/jsx-runtime", "plugin:tailwindcss/recommended", "next/core-web-vitals", "plugin:prettier/recommended", "plugin:storybook/recommended"],
   ignorePatterns: ["/*.cjs", "/node_modules/**/*"],
-  overrides: [
-    {
-      files: ["*.ts", "*.tsx"],
-
-      extends: [
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:prettier/recommended"
-      ],
-
-      parserOptions: {
-        project: ["./tsconfig.json"],
-        ecmaFeatures: {
-          jsx: true
-        }
-      },
-
-      rules: {
-        "@typescript-eslint/no-explicit-any": "off",
-        quotes: ["off"]
+  overrides: [{
+    files: ["*.ts", "*.tsx"],
+    extends: ["plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking", "plugin:prettier/recommended"],
+    parserOptions: {
+      project: ["./tsconfig.json"],
+      ecmaFeatures: {
+        jsx: true
       }
+    },
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+      quotes: ["off"]
     }
-  ],
+  }],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "2020",
     sourceType: "module"
   },
-  plugins: [
-    "@typescript-eslint",
-    "github",
-    "import",
-    "jsx-a11y",
-    "prettier",
-    "react",
-    "react-hooks",
-    "tailwindcss"
-  ],
+  plugins: ["@typescript-eslint", "github", "import", "jsx-a11y", "prettier", "react", "react-hooks", "tailwindcss"],
   rules: {
-    camelcase: [
-      "error",
-      {
-        ignoreDestructuring: true,
-        properties: "never"
-      }
-    ],
+    camelcase: ["error", {
+      ignoreDestructuring: true,
+      properties: "never"
+    }],
     "linebreak-style": "error",
     "no-console": "off",
     "prefer-destructuring": "error",
