@@ -29,6 +29,7 @@ _Please ensure that the following items all have checked boxes before setting yo
 - [ ] Related issue is linked in pull request description using [closing keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 - [ ] The appropriate label has been chosen for this pull request.
 - [ ] The correct project has been selected for this pull request.
+- [ ] The milestone corresponding with the issue has been selected for this pull request.
 - [ ] All commits in this branch, including merge commits, begin with the issue number and a pound sign.
 
 ### Code Standards
