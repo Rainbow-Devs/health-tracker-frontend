@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report for the Health Tracker frontend app.
+description: File a bug report for the WellPath frontend app.
 labels: ["bug"]
 body:
   - type: textarea

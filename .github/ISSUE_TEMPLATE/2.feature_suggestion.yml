@@ -1,5 +1,5 @@
 name: Feature Suggestion
-description: Suggest a new feature for the Health Tracker frontend app.
+description: Suggest a new feature for the WellPath frontend app.
 labels: ["enhancement"]
 body:
   - type: textarea
