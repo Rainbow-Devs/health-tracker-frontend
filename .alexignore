@@ -1,3 +1,6 @@
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 SECURITY.md
+pnpm-lock.yaml
+/*.cjs
+node_modules/*
