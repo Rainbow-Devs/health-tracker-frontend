@@ -16,7 +16,7 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "plugin:tailwindcss/recommended",
     "next/core-web-vitals",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   ignorePatterns: ["/*.cjs", "/node_modules/**/*"],
   overrides: [
@@ -26,7 +26,7 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:prettier/recommended"
+        "prettier"
       ],
 
       parserOptions: {
@@ -37,8 +37,7 @@ module.exports = {
       },
 
       rules: {
-        "@typescript-eslint/no-explicit-any": "off",
-        quotes: ["off"]
+        "@typescript-eslint/no-explicit-any": "off"
       }
     }
   ],
