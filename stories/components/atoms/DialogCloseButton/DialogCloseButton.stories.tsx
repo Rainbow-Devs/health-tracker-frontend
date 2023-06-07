@@ -1,11 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import DialogDismiss from './DialogCloseButton'
+import { DialogCloseButton } from "./DialogCloseButton";
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta: Meta<typeof Button> = {
-  title: "Example/Button",
-  component: Button,
-  tags: ["autodocs"],
+const meta: Meta<typeof DialogCloseButton> = {
+  title: "Atoms/DialogCloseButton",
+  component: DialogCloseButton,
   argTypes: {
     backgroundColor: {
       control: "color"
@@ -14,12 +12,12 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+type Story = StoryObj<typeof DialogCloseButton>;
+
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button',
-  },
+    label: "DialogCloseButton"
+  }
 };
