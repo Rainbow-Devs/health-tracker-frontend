@@ -2,7 +2,7 @@ import "./globals.css";
 import { NavBar } from "@organisms/NavBar";
 
 export const metadata = {
-  title: "Health Tracker App",
+  title: "WellPath",
   description: "A health tracker application created by the Rainbow Devs."
 };
 

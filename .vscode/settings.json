@@ -47,9 +47,11 @@
     "ariakit",
     "camelcase",
     "clsx",
+    "corepack",
     "Devs",
     "linebreak",
     "NBAB",
-    "tailwindcss"
+    "tailwindcss",
+    "wellpath"
   ]
 }
