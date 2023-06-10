@@ -1,23 +1,36 @@
 {
   "name": "wellpath-frontend",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Frontend webapp for WellPath, the Rainbow Devs health tracker application.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rainbow-Devs/health-tracker.git"
-  },
-  "homepage": "https://github.com/Rainbow-Devs/health-tracker",
+  "repository": "github:Rainbow-Devs/health-tracker-frontend",
+  "homepage": "https://github.com/Rainbow-Devs/health-tracker-frontend",
+  "bugs": "https://github.com/Rainbow-Devs/health-tracker-frontend/issues",
   "author": {
     "name": "Rainbow Devs",
     "url": "https://github.com/Rainbow-Devs"
   },
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "Spencer Wohlers",
+      "url": "https://github.com/seidior"
+    }
+  ],
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "^18.16.0 || >=20.2.0"
+    "node": "^18.16.0 || >=20.2.0",
+    "pnpm": ">=8"
   },
-  "keywords": [],
+  "keywords": [
+    "health",
+    "health tracker",
+    "Next.js",
+    "Rainbow Devs",
+    "React",
+    "webapp",
+    "wellness"
+  ],
+  "main": ".next/standalone/server.js",
   "packageManager": "pnpm@8.5.1",
   "type": "module",
   "husky": {
