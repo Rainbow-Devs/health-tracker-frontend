@@ -17,7 +17,6 @@ type Story = StoryObj<typeof GenericButton>;
 export const Primary: Story = {
   args: {
     children: "GenericButton",
-    className: "h-20",
     href: "/"
   }
 };
