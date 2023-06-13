@@ -13,6 +13,10 @@
     {
       "name": "Spencer Wohlers",
       "url": "https://github.com/seidior"
+    },
+    {
+      "name": "Jacob Gill",
+      "url": "https://github.com/jcub7012"
     }
   ],
   "license": "MIT",
@@ -52,9 +56,10 @@
     "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store"
   },
   "dependencies": {
-    "next": "^13.4.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "13.4.5",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "4.9.0"
   },
   "devDependencies": {
     "@ariakit/react": "^0.2.9",

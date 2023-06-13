@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.bg-custom-color {
+  background-color: #4B5563; /*This is the footer color, where is my home?*/
+}
