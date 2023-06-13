@@ -117,6 +117,9 @@ devDependencies:
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
+  tsconfig-paths-webpack-plugin:
+    specifier: 4.0.1
+    version: 4.0.1
   typescript:
     specifier: ^5.1.3
     version: 5.1.3
@@ -13142,6 +13145,15 @@ packages:
       chalk: 4.1.2
       enhanced-resolve: 5.14.1
       tsconfig-paths: 3.14.2
+    dev: true
+
+  /tsconfig-paths-webpack-plugin@4.0.1:
+    resolution: {integrity: sha512-m5//KzLoKmqu2MVix+dgLKq70MnFi8YL8sdzQZ6DblmCdfuq/y3OqvJd5vMndg2KEVCOeNz8Es4WVZhYInteLw==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      chalk: 4.1.2
+      enhanced-resolve: 5.14.1
+      tsconfig-paths: 4.2.0
     dev: true
 
   /tsconfig-paths@3.14.2:
