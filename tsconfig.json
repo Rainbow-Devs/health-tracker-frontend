@@ -22,10 +22,11 @@
     "paths": {
       "@app/*": ["./app/*"],
       "@atoms/*": ["./components/atoms/*"],
-      "@helpers/*": ["./components/helpers/*"],
       "@molecules/*": ["./components/molecules/*"],
       "@organisms/*": ["./components/organisms/*"],
-      "@templates/*": ["./components/templates/*"]
+      "@templates/*": ["./components/templates/*"],
+
+      "@helpers/*": ["stories/components/helpers/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

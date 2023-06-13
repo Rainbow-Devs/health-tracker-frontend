@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import React, { ButtonHTMLAttributes } from "react";
-import { cx } from "class-variance-authority";
+import { cn } from "@helpers/frontend-utils";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
@@ -24,7 +24,7 @@ export const GenericButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         type="button"
         ref={ref}
-        className={cx(buttonStyle, className)}
+        className={cn(buttonStyle, className)}
         onClick={() => {
           if (onClick) {
             onClick();
