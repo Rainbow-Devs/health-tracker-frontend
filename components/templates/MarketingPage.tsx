@@ -1,4 +1,4 @@
-import { MarketingHero } from "@templates/MarketingHero";
+import { MarketingHero } from "@organisms/MarketingHero";
 
 export const MarketingPage: React.FC = () => {
   return (
