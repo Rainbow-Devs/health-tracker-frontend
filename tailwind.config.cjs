@@ -25,7 +25,10 @@ module.exports = {
           800: "#282e3d",
           900: "#151828"
         },
-        footerBg: "#4B5563",
+        footerBg: {
+          light: "#4B5563",
+          dark: "#212B36"
+        },
         primary: "#3056D3",
         secondary: "#6F35A5",
         white: "#FFF"
