@@ -73,6 +73,14 @@ container image:
 docker compose down
 ```
 
+## Testing
+
+To run tests run npm test.
+
+Please write unit tests for components where applicable. Make the components as testable as possible by structuring them as presentational vs container components.
+
+Testing will ensure that our code is maintainable in the future.
+
 ## Next.js Resources
 
 To learn more about Next.js, take a look at the following resources:
