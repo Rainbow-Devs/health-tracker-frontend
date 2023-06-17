@@ -11,7 +11,7 @@
     "name": "Rainbow Devs",
     "url": "https://github.com/Rainbow-Devs"
   },
-  "contributors": [],
+  "contributors": ["Michael Trew"],
   "license": "MIT",
   "private": true,
   "engines": {
