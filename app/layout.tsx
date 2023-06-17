@@ -1,5 +1,5 @@
 import "./globals.css";
-import { NavBar } from "@organisms/NavBar";
+import NavBarWrapper from "@organisms/NavBarWrapper";
 
 export const metadata = {
   title: "WellPath",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-gradient-to-br from-white to-fitGray-100/50 text-fitGray-900 antialiased dark:from-fitGray-700 dark:to-fitGray-900 dark:text-white">
-        <NavBar />
+        <NavBarWrapper />
         {children}
         {authModal}
       </body>
