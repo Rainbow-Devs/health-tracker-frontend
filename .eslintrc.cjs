@@ -26,7 +26,7 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:prettier/recommended"
+        "prettier"
       ],
       parserOptions: {
         project: ["./tsconfig.json"],
@@ -35,8 +35,7 @@ module.exports = {
         }
       },
       rules: {
-        "@typescript-eslint/no-explicit-any": "off",
-        quotes: ["off"]
+        "@typescript-eslint/no-explicit-any": "off"
       }
     }
   ],
