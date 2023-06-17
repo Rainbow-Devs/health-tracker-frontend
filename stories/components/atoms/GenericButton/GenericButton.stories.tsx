@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { GenericButton } from "./GenericButton";
+import { GenericButton } from ".";
 
 const meta: Meta<typeof GenericButton> = {
   title: "Atoms/GenericButton",

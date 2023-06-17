@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { NavBarActionButton } from "./NavBarActionButton";
+import { NavBarActionButton } from ".";
 
 const meta: Meta<typeof NavBarActionButton> = {
   title: "Atoms/NavBarActionButton",

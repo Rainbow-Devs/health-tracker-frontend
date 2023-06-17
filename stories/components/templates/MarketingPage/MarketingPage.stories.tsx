@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { MarketingPage } from "./MarketingPage";
+import { MarketingPage } from ".";
 
 const meta: Meta<typeof MarketingPage> = {
   title: "Templates/MarketingPage",

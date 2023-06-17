@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { DialogCloseButton } from "./DialogCloseButton";
+import { DialogCloseButton } from ".";
 
 const meta: Meta<typeof DialogCloseButton> = {
   title: "Atoms/DialogCloseButton",

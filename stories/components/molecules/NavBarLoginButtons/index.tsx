@@ -1,5 +1,5 @@
 "use client";
-import { NavBarActionButton } from "../../atoms/NavBarActionButton/NavBarActionButton";
+import { NavBarActionButton } from "@atoms/NavBarActionButton";
 import { usePathname } from "next/navigation";
 
 export const NavBarLoginButtons: React.FC = () => {

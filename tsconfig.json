@@ -19,14 +19,15 @@
         "name": "next"
       }
     ],
+    // base url is necessary for webpack tsconfig extension
+    "baseUrl": "./",
     "paths": {
-      "@app/*": ["./app/*"],
-      "@atoms/*": ["./components/atoms/*"],
-      "@molecules/*": ["./components/molecules/*"],
-      "@organisms/*": ["./components/organisms/*"],
-      "@templates/*": ["./components/templates/*"],
-
-      "@helpers/*": ["stories/components/helpers/*"]
+      "@app/*": ["app/*"],
+      "@atoms/*": ["stories/components/atoms/*"],
+      "@helpers/*": ["stories/components/helpers/*"],
+      "@molecules/*": ["stories/components/molecules/*"],
+      "@organisms/*": ["stories/components/organisms/*"],
+      "@templates/*": ["stories/components/templates/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

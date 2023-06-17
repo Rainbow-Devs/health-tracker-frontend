@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { LoginPrompt } from "./LoginPrompt";
+import { LoginPrompt } from ".";
 
 const meta: Meta<typeof LoginPrompt> = {
   title: "Molecules/LoginPrompt",
