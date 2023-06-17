@@ -43,7 +43,7 @@ const HamburgerMenu: FC = () => {
             <Link
               onClick={toggleMenu}
               href="/login"
-              className="text-xl font-bold"
+              className="text-3xl font-bold"
             >
               Log In
             </Link>
