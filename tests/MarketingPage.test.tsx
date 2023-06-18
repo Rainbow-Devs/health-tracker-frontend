@@ -6,7 +6,6 @@ describe("MarketingPage", () => {
   it("renders the MarketingHero component", () => {
     render(<MarketingPage />);
     const marketingHero = screen.getByTestId("hero");
-    console.log(marketingHero);
     expect(marketingHero).toBeInTheDocument();
   });
   it("renders the detail section with the correct ID", () => {
