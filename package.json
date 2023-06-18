@@ -40,7 +40,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --runInBand",
+    "test": "jest --runInBand --passWithNoTests",
     "test:watch": "jest --watch",
     "lint": "pnpm eslint:check && pnpm alex:check",
     "eslint:check": "next lint",
