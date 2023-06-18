@@ -6,9 +6,9 @@ import { MonoLogo } from "@images/WellPathLogo";
 export const PageFooter: React.FC = () => {
   return (
     <footer className="bg-footerBg-light p-10 text-white dark:bg-footerBg-dark sm:px-4">
-      <div className="container mx-auto max-w-screen-lg">
+      <div className="container mx-auto max-w-screen-lg sm:flex-col">
         <div className="flex flex-wrap">
-          <div className="w-full px-4 lg:w-3/12">
+          <div className="w-full px-4 sm:w-full lg:w-3/12">
             <div className="mb-10 w-full">
               <div className="mb-6 inline-block max-w-[160px]">
                 <MonoLogo className="w-full text-white" />
