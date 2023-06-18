@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { MonoLogo } from "@images/WellPathLogo";
+import { GitHubIcon, LinkedInIcon } from "@images/SocialIcons";
 
 export const PageFooter: React.FC = () => {
   return (
@@ -68,7 +68,7 @@ export const PageFooter: React.FC = () => {
                     target="_blank"
                     title="Rainbow Devs GitHub Page"
                   >
-                    <FaGithub className="h-full w-full" />
+                    <GitHubIcon className="h-full w-full" />
                   </a>
                 </div>
                 <div className="mr-4 h-6 w-6">
@@ -77,7 +77,7 @@ export const PageFooter: React.FC = () => {
                     target="_blank"
                     title="Rainbow Devs LinkedIn Page"
                   >
-                    <FaLinkedin className="h-full w-full" />
+                    <LinkedInIcon className="h-full w-full" />
                   </a>
                 </div>
               </div>
