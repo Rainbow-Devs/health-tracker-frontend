@@ -6,10 +6,10 @@ import { GitHubIcon, LinkedInIcon } from "@images/SocialIcons";
 export const PageFooter: React.FC = () => {
   return (
     <footer className="bg-footerBg-light p-10 text-white dark:bg-footerBg-dark sm:px-4">
-      <div className="container mx-auto max-w-screen-lg sm:flex-col">
-        <div className="flex flex-wrap">
-          <div className="w-full px-4 sm:w-full lg:w-3/12">
-            <div className="mb-10 w-full">
+      <div className="container mx-auto max-w-screen-lg">
+        <div className="grid grid-cols-12 text-center sm:text-left">
+          <div className="col-span-12 row-start-4 sm:row-start-2 md:col-span-4 md:row-start-1">
+            <div className="mb-10 w-full px-4">
               <div className="mb-6 inline-block max-w-[160px]">
                 <MonoLogo className="w-full text-white" />
               </div>
@@ -18,8 +18,8 @@ export const PageFooter: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/3 lg:w-3/12">
-            <div className="mb-10 w-full">
+          <div className="col-span-12 sm:col-span-4 md:col-span-3">
+            <div className="mb-10 w-full px-4">
               <h4 className="mb-4 text-lg font-semibold text-white">
                 WellPath
               </h4>
@@ -37,8 +37,8 @@ export const PageFooter: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/3 lg:w-3/12">
-            <div className="mb-10 w-full">
+          <div className="col-span-12 sm:col-span-4 md:col-span-3">
+            <div className="mb-10 w-full px-4">
               <h4 className="mb-4 text-lg font-semibold text-white">
                 Rainbow Devs
               </h4>
@@ -56,13 +56,13 @@ export const PageFooter: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/3 lg:w-3/12">
-            <div className="mb-10 w-full">
+          <div className="col-span-12 sm:col-span-4 md:col-span-2">
+            <div className="mb-16 w-full px-4 sm:mb-10">
               <h4 className="mb-4 text-lg font-semibold text-white">
                 Follow Us
               </h4>
-              <div className="mb-2 flex w-full items-center text-slate-200 hover:text-white">
-                <div className="mr-4 h-6 w-6">
+              <div className="mb-2 w-full text-slate-200 hover:text-white">
+                <div className="mx-3 inline-block h-8 w-8 sm:mx-2 sm:ml-0 md:h-6 md:w-6">
                   <a
                     href="https://github.com/Rainbow-Devs"
                     target="_blank"
@@ -71,7 +71,7 @@ export const PageFooter: React.FC = () => {
                     <GitHubIcon className="h-full w-full" />
                   </a>
                 </div>
-                <div className="mr-4 h-6 w-6">
+                <div className="mx-3 inline-block h-8 w-8 sm:mx-2 md:h-6 md:w-6">
                   <a
                     href="https://www.linkedin.com/company/rainbow-devs"
                     target="_blank"
