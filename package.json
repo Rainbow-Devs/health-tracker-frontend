@@ -12,7 +12,10 @@
     "url": "https://github.com/Rainbow-Devs"
   },
   "contributors": [
-    "Michael Trew"
+    {
+      "name": "Michael Trew",
+      "url": "https://www.github.com/codediversity"
+    }
   ],
   "license": "MIT",
   "private": true,
@@ -41,9 +44,6 @@
     "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.4.0",
-    "@fortawesome/free-solid-svg-icons": "6.4.0",
-    "@fortawesome/react-fontawesome": "0.2.0",
     "next": "^13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
