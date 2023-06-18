@@ -1,13 +1,12 @@
 "use client";
 
+import { Menu, MenuButton, MenuItem, useMenuStore } from "@ariakit/react";
 import { NavBarLogo } from "@atoms/NavBarLogo";
-import { useMenuStore, MenuButton, MenuItem, Menu } from "@ariakit/react";
 import { useRouter } from "next/navigation";
-import { FC } from "react";
 
 import { MobileMenuImage } from "../images/MobileMenuImage";
 
-const HamburgerMenu: FC = () => {
+const HamburgerMenu: React.FC = () => {
   const menu = useMenuStore();
   const router = useRouter();
 
