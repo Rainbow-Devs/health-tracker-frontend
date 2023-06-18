@@ -75,7 +75,7 @@ docker compose down
 
 ## Testing
 
-To run tests run npm test.
+To run tests run `pnpm test`.
 
 Please write unit tests for components where applicable. Make the components as testable as possible by structuring them as presentational vs container components.
 
