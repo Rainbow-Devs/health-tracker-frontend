@@ -19,12 +19,12 @@
         "name": "next"
       }
     ],
-    // base url is necessary for webpack tsconfig extension
-    "baseUrl": "./",
+    "baseUrl": "./", // required by webpack tsconfig extension
     "paths": {
       "@app/*": ["app/*"],
       "@atoms/*": ["stories/components/atoms/*"],
       "@helpers/*": ["stories/components/helpers/*"],
+      "@images/*": ["stories/components/images/*"],
       "@molecules/*": ["stories/components/molecules/*"],
       "@organisms/*": ["stories/components/organisms/*"],
       "@templates/*": ["stories/components/templates/*"],

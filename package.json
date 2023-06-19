@@ -47,12 +47,14 @@
     "eslint:fix": "next lint --fix",
     "alex:check": "alex .",
     "format": "pnpm prettier:overwrite",
-    "prettier:check": "prettier --check ./app ./components *.cjs",
-    "prettier:overwrite": "prettier --write ./app ./components *.cjs",
+    "prettier:check": "prettier --check ./app ./stories *.cjs",
+    "prettier:overwrite": "prettier --write ./app ./stories *.cjs",
     "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store",
     "git:reset": "git reset --hard HEAD",
     "git:clean": "git clean -d -x -e node_modules -e packages -f",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "^13.4.6",
@@ -61,6 +63,15 @@
   },
   "devDependencies": {
     "@ariakit/react": "^0.2.10",
+    "@storybook/addon-essentials": "^7.0.22",
+    "@storybook/addon-interactions": "^7.0.22",
+    "@storybook/addon-links": "^7.0.22",
+    "@storybook/addon-mdx-gfm": "^7.0.22",
+    "@storybook/addon-styling": "1.3.0",
+    "@storybook/blocks": "^7.0.22",
+    "@storybook/nextjs": "^7.0.22",
+    "@storybook/react": "^7.0.22",
+    "@storybook/testing-library": "^0.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.2",
