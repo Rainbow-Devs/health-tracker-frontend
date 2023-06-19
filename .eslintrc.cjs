@@ -16,8 +16,8 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "plugin:tailwindcss/recommended",
     "next/core-web-vitals",
-    "plugin:prettier/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "prettier"
   ],
   ignorePatterns: ["/*.cjs", "/node_modules/**/*"],
   overrides: [
@@ -51,7 +51,6 @@ module.exports = {
     "jest",
     "jest-dom",
     "jsx-a11y",
-    "prettier",
     "react",
     "react-hooks",
     "tailwindcss",
