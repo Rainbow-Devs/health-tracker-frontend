@@ -48,6 +48,7 @@ module.exports = {
     "@typescript-eslint",
     "github",
     "import",
+    "jest",
     "jsx-a11y",
     "prettier",
     "react",
