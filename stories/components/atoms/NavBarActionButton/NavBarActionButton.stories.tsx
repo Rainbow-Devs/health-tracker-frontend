@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { NavBarActionButton } from ".";
+import { NavBarActionButton, buttonVariants } from ".";
+import { cn } from "@helpers/frontend-utils";
 
 const meta: Meta<typeof NavBarActionButton> = {
   title: "Atoms/NavBarActionButton",
@@ -17,7 +18,9 @@ type Story = StoryObj<typeof NavBarActionButton>;
 export const Primary: Story = {
   args: {
     children: "NavBarActionButton",
-    className: "h-20",
+    className: cn(
+      buttonVariants({ variant: "buttonStyle", size: "md", className: "h-20" })
+    ),
     href: "/",
     variant: "buttonStyle"
   }
