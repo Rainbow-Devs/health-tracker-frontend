@@ -35,4 +35,3 @@ export const ColorLogo = (props: any) => (
     />
   </svg>
 );
-
