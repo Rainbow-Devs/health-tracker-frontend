@@ -1,8 +1,10 @@
 "use client";
 
-import { VariantProps, cva, cx } from "class-variance-authority";
+import { VariantProps, cva } from "class-variance-authority";
 import { useRouter } from "next/navigation";
 import React, { ButtonHTMLAttributes } from "react";
+
+import { cn } from "@helpers/frontend-utils";
 
 export const buttonVariants = cva(
   "flex touch-none select-none items-center justify-center gap-1 whitespace-nowrap rounded-lg border-none leading-6 no-underline focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-500 aria-disabled:opacity-50 sm:gap-2",
@@ -44,7 +46,7 @@ export const NavBarActionButton = React.forwardRef<
     <button
       type="button"
       ref={ref}
-      className={cx(buttonVariants({ variant, size, className }))}
+      className={cn(buttonVariants({ variant, size, className }))}
       onClick={() => {
         if (href) {
           clickHandler(href);
