@@ -49,10 +49,13 @@
     "clsx",
     "corepack",
     "Devs",
+    "fontawesome",
+    "Fonticons",
     "linebreak",
     "NBAB",
     "tailwindcss",
     "Trew",
-    "wellpath"
+    "wellpath",
+    "Wohlers"
   ]
 }

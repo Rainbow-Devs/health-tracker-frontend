@@ -1,5 +1,6 @@
 import "./globals.css";
 import { NavBar } from "@organisms/NavBar";
+import { PageFooter } from "@organisms/PageFooter";
 
 export const metadata = {
   title: "WellPath",
@@ -15,10 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gradient-to-br from-white to-fitGray-100/50 text-fitGray-900 antialiased dark:from-fitGray-700 dark:to-fitGray-900 dark:text-white">
+      <body className="light:bg-gradient-to-br min-h-screen from-white to-fitGray-100/50 text-fitGray-900 antialiased dark:bg-footerBg-light dark:text-white">
         <NavBar />
         {children}
         {authModal}
+        <PageFooter />
       </body>
     </html>
   );

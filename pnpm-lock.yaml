@@ -17,14 +17,17 @@ dependencies:
 
 devDependencies:
   '@ariakit/react':
-    specifier: ^0.2.8
-    version: 0.2.8(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.2.10
+    version: 0.2.10(react-dom@18.2.0)(react@18.2.0)
   '@testing-library/jest-dom':
     specifier: ^5.16.5
     version: 5.16.5
   '@testing-library/react':
     specifier: ^14.0.0
     version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+  '@types/jest':
+    specifier: ^29.5.2
+    version: 29.5.2
   '@types/node':
     specifier: ^20.3.1
     version: 20.3.1
@@ -34,6 +37,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.2.5
     version: 18.2.5
+  '@types/testing-library__jest-dom':
+    specifier: ^5.14.6
+    version: 5.14.6
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.59.11
     version: 5.59.11(@typescript-eslint/parser@5.59.11)(eslint@8.43.0)(typescript@5.1.3)
@@ -70,6 +76,9 @@ devDependencies:
   eslint-plugin-import:
     specifier: ^2.27.5
     version: 2.27.5(@typescript-eslint/parser@5.59.11)(eslint-import-resolver-typescript@3.5.5)(eslint@8.43.0)
+  eslint-plugin-jest:
+    specifier: ^27.2.1
+    version: 27.2.1(@typescript-eslint/eslint-plugin@5.59.11)(eslint@8.43.0)(jest@29.5.0)(typescript@5.1.3)
   eslint-plugin-react:
     specifier: ^7.32.2
     version: 7.32.2(eslint@8.43.0)
@@ -98,8 +107,8 @@ devDependencies:
     specifier: ^3.1.3
     version: 3.1.3(prettier@2.8.8)
   tailwind-merge:
-    specifier: ^1.13.0
-    version: 1.13.0
+    specifier: ^1.13.2
+    version: 1.13.2
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -125,30 +134,30 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
 
-  /@ariakit/core@0.2.4:
-    resolution: {integrity: sha512-mMCOGm44ZjHVowmETMSxPVHnrnf5sy6DoSpdudD5SVQjfBWTo7/wTKeI5aXpctAiyylsLxPfc8dQVNeS94kGAQ==}
+  /@ariakit/core@0.2.6:
+    resolution: {integrity: sha512-83r2YmLvHLsV2NoclM5sfpLXfJ9S3R4lQIZK5Iad/KdfuFolvtVKPVrLW9OGoD1D4OuLxO1PgYKZEDPH0a1TjQ==}
     dev: true
 
-  /@ariakit/react-core@0.2.8(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sbwgvoKDt6MJC4zudy3NvP8Y3cxdknRc1qyXDEqv+N/Tv/ecvPCQBcTA9GTuom3nSGQZYOxrf1EyeadeCnmHGA==}
+  /@ariakit/react-core@0.2.10(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-/MBX9ToIBQUR//uaOs1XzLz+Zq7ECMQmr670mXiDg3L9bu0siQKP3vD2Fl8RDRWMEMOk6+0Utr3Fm49hYlg24g==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
       react-dom: ^17.0.0 || ^18.0.0
     dependencies:
-      '@ariakit/core': 0.2.4
-      '@floating-ui/dom': 1.4.0
+      '@ariakit/core': 0.2.6
+      '@floating-ui/dom': 1.4.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: true
 
-  /@ariakit/react@0.2.8(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-edqty4NjqGS+a67eC0dRrYKjkZQlw1CDvE9v5uunajs0BrquPPB/tOFVkUwCoGsfX9eA23MhN4RMsqjV41z6Qg==}
+  /@ariakit/react@0.2.10(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-T0ftSgAuEXzA5MvurSWALfJBhTHzEgkXTDWEBTOkSzR5nxilPU/80UgA7dKHi4SGA3wUXIIMjRb42Djk3Qi9pQ==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
       react-dom: ^17.0.0 || ^18.0.0
     dependencies:
-      '@ariakit/react-core': 0.2.8(react-dom@18.2.0)(react@18.2.0)
+      '@ariakit/react-core': 0.2.10(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
@@ -513,8 +522,8 @@ packages:
     resolution: {integrity: sha512-Bu+AMaXNjrpjh41znzHqaz3r2Nr8hHuHZT6V2LBKMhyMl0FgKA62PNYbqnfgmzOhoWZj70Zecisbo4H1rotP5g==}
     dev: true
 
-  /@floating-ui/dom@1.4.0:
-    resolution: {integrity: sha512-b4F0iWffLiqb/TpP2PWVOixrZqE6ni+6VT64AmFH7sJIF3SFPLbe6/h3jQ5Cwffs+HaC9A8V0TQzCPBwVvziIA==}
+  /@floating-ui/dom@1.4.1:
+    resolution: {integrity: sha512-loCXUOLzIC3jp50RFOKXZ/kQjjz26ryr/23M+FWG9jrmAv8lRf3DUfC2AiVZ3+K316GOhB08CR+Povwz8e9mDw==}
     dependencies:
       '@floating-ui/core': 1.3.1
     dev: true
@@ -2846,6 +2855,28 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+    dev: true
+
+  /eslint-plugin-jest@27.2.1(@typescript-eslint/eslint-plugin@5.59.11)(eslint@8.43.0)(jest@29.5.0)(typescript@5.1.3):
+    resolution: {integrity: sha512-l067Uxx7ZT8cO9NJuf+eJHvt6bqJyz2Z29wykyEdz/OtmcELQl2MQGQLX8J94O1cSJWAwUSEvCjwjA7KEK3Hmg==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.0.0
+      eslint: ^7.0.0 || ^8.0.0
+      jest: '*'
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
+      jest:
+        optional: true
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.59.11(@typescript-eslint/parser@5.59.11)(eslint@8.43.0)(typescript@5.1.3)
+      '@typescript-eslint/utils': 5.59.11(eslint@8.43.0)(typescript@5.1.3)
+      eslint: 8.43.0
+      jest: 29.5.0(@types/node@20.3.1)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: true
 
   /eslint-plugin-jsx-a11y@6.7.1(eslint@8.43.0):
@@ -7120,8 +7151,8 @@ packages:
       tslib: 2.5.3
     dev: true
 
-  /tailwind-merge@1.13.0:
-    resolution: {integrity: sha512-mUTmDbcU+IhOvJ0c42eLQ/nRkvolTqfpVaVQRSxfJAv9TabS6Y2zW/1wKpKLdKzyL3Gh8j6NTLl6MWNmvOM6kA==}
+  /tailwind-merge@1.13.2:
+    resolution: {integrity: sha512-R2/nULkdg1VR/EL4RXg4dEohdoxNUJGLMnWIQnPKL+O9Twu7Cn3Rxi4dlXkDzZrEGtR+G+psSXFouWlpTyLhCQ==}
     dev: true
 
   /tailwindcss@3.3.2:
