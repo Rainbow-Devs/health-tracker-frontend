@@ -1,11 +1,13 @@
 import { LoginPrompt } from "@molecules/LoginPrompt";
+import { MarketingPage } from "@templates/MarketingPage";
 
 export default function Page() {
   return (
-    <main>
-      <div className="container p-4">
-        <LoginPrompt />
-      </div>
-    </main>
+    <MarketingPage>
+      <header>
+        <h1 className="mb-4 text-lg font-bold">Get Started</h1>
+      </header>
+      <LoginPrompt />
+    </MarketingPage>
   );
 }

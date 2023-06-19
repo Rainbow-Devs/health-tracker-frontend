@@ -26,7 +26,7 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "prettier"
+        "prettier",
       ],
 
       parserOptions: {
@@ -51,11 +51,13 @@ module.exports = {
     "github",
     "import",
     "jest",
+    "jest-dom",
     "jsx-a11y",
     "prettier",
     "react",
     "react-hooks",
-    "tailwindcss"
+    "tailwindcss",
+    "testing-library"
   ],
   rules: {
     camelcase: [

@@ -1,12 +1,9 @@
-import { MarketingHero } from "@organisms/MarketingHero";
-
-export const MarketingPage: React.FC = () => {
+export const MarketingPage = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <MarketingHero />
-      <section data-testid="detail-1" id="detail-1">
-        <div className="container"></div>
-      </section>
+    <main className="flex flex-col justify-between">
+      <div className="container min-h-screen max-w-screen-lg p-4">
+        {children}
+      </div>
     </main>
   );
 };
