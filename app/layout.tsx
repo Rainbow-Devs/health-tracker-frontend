@@ -1,5 +1,6 @@
 import "./globals.css";
 import NavBarWrapper from "@organisms/NavBarWrapper";
+import { PageFooter } from "@organisms/PageFooter";
 
 export const metadata = {
   title: "WellPath",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <NavBarWrapper />
         {children}
         {authModal}
+        <PageFooter />
       </body>
     </html>
   );
