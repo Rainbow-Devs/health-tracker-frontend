@@ -5,7 +5,7 @@ import { GitHubIcon, LinkedInIcon } from "@images/SocialIcons";
 
 export const PageFooter: React.FC = () => {
   return (
-    <footer className="bg-footerBg-light p-10 text-white dark:bg-footerBg-dark sm:px-4">
+    <footer className="bg-footerBg-light p-10 text-white sm:px-4">
       <div className="container mx-auto max-w-screen-lg">
         <div className="grid grid-cols-12 text-center sm:text-left">
           <div className="col-span-12 row-start-4 sm:row-start-2 md:col-span-4 md:row-start-1">
@@ -61,8 +61,8 @@ export const PageFooter: React.FC = () => {
               <h4 className="mb-4 text-lg font-semibold text-white">
                 Follow Us
               </h4>
-              <div className="mb-2 w-full text-slate-200 hover:text-white">
-                <div className="mx-3 inline-block h-8 w-8 sm:mx-2 sm:ml-0 md:h-6 md:w-6">
+              <div className="mb-2 w-full text-slate-200">
+                <div className="mx-3 inline-block h-8 w-8 hover:text-white sm:mx-2 sm:ml-0 md:h-6 md:w-6">
                   <a
                     href="https://github.com/Rainbow-Devs"
                     target="_blank"
@@ -71,7 +71,7 @@ export const PageFooter: React.FC = () => {
                     <GitHubIcon className="h-full w-full" />
                   </a>
                 </div>
-                <div className="mx-3 inline-block h-8 w-8 sm:mx-2 md:h-6 md:w-6">
+                <div className="mx-3 inline-block h-8 w-8 hover:text-white sm:mx-2 md:h-6 md:w-6">
                   <a
                     href="https://www.linkedin.com/company/rainbow-devs"
                     target="_blank"

@@ -1,14 +1,11 @@
 export const MarketingHero: React.FC = () => {
   return (
-    <section
-      id="hero"
-      data-testid="hero"
-      className="z-10 w-full max-w-5xl items-center font-mono text-sm lg:flex"
-    >
-      <div className="container">
-        Let&rsquo;s build a health tracker! Get started by editing&nbsp;
-        <code className="font-mono font-bold">app/page.tsx</code>
-      </div>
+    <section>
+      <header>
+        <h1 className="mb-4 text-lg font-bold">Getting Started</h1>
+      </header>
+      Let&rsquo;s build a health tracker! Get started by editing&nbsp;
+      <code className="font-mono font-bold">app/page.tsx</code>
     </section>
   );
 };

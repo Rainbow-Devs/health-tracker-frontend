@@ -11,11 +11,8 @@ export const NavBarLoginButtons: React.FC = () => {
 
   return (
     <div className="flex items-center space-x-1">
-      <NavBarActionButton variant="linkStyle" href="/login">
-        Log In
-      </NavBarActionButton>
       <NavBarActionButton variant="buttonStyle" href="/login">
-        Sign Up
+        Get Started
       </NavBarActionButton>
     </div>
   );

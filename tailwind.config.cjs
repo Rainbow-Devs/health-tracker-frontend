@@ -14,6 +14,10 @@ module.exports = {
         "alert-green": "#007200",
         "alert-orange": "#EB6600",
         "alert-red": "#BC1C21",
+        ctaColor: {
+          light: "#3056D3",
+          dark: "#CEDDEF"
+        },
         darkBlue: "#090E34",
         fitGray: {
           100: "#bfbfbf",
