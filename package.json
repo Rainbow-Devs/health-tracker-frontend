@@ -21,15 +21,29 @@
     {
       "name": "Spencer Wohlers",
       "url": "https://github.com/seidior"
+    },
+    {
+      "name": "Estifanos Beyene",
+      "url": "https://github.com/justEstif"
     }
   ],
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "^18.16.0 || >=20.2.0"
+    "node": "^18.16.0 || >=20.2.0",
+    "pnpm": ">=8"
   },
-  "keywords": [],
-  "packageManager": "pnpm@8.6.2",
+  "keywords": [
+    "health",
+    "health tracker",
+    "Next.js",
+    "Rainbow Devs",
+    "React",
+    "webapp",
+    "wellness"
+  ],
+  "main": ".next/standalone/server.js",
+  "packageManager": "pnpm@8.5.1",
   "type": "module",
   "husky": {
     "hooks": {
