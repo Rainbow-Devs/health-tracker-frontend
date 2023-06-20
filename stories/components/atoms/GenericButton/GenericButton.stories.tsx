@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { GenericButton } from ".";
+import { GenericButton, buttonStyle } from ".";
+import { cn } from "@helpers/frontend-utils";
 
 const meta: Meta<typeof GenericButton> = {
   title: "Atoms/GenericButton",
@@ -17,6 +18,7 @@ type Story = StoryObj<typeof GenericButton>;
 export const Primary: Story = {
   args: {
     children: "GenericButton",
+    className: cn(buttonStyle, ""),
     href: "/"
   }
 };

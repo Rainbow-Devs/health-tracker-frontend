@@ -19,7 +19,7 @@ export const Primary: Story = {
   args: {
     children: "NavBarActionButton",
     className: cn(
-      buttonVariants({ variant: "buttonStyle", size: "md", className: "h-20" })
+      buttonVariants({ variant: "buttonStyle", size: "md", className: "" })
     ),
     href: "/",
     variant: "buttonStyle"
@@ -29,7 +29,9 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     children: "Home",
-    className: "h-20",
+    className: cn(
+      buttonVariants({ variant: "buttonStyle", size: "md", className: "" })
+    ),
     href: "/",
     variant: "linkStyle"
   }

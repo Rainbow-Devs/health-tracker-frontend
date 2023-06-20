@@ -10,7 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
-const buttonStyle =
+export const buttonStyle =
   "flex h-10 touch-none select-none items-center justify-center gap-1 whitespace-nowrap rounded-lg border-none bg-ctaColor-light px-4 text-base font-bold leading-6 text-white no-underline hover:opacity-90 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-500 aria-disabled:opacity-50 dark:bg-ctaColor-dark dark:text-footerBg-dark sm:gap-2";
 
 export const GenericButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
