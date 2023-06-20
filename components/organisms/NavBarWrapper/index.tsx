@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import HamburgerMenu from "./HamburgerMenu";
-import { NavBar } from "./NavBar";
+import HamburgerMenu from "@organisms/HamburgerMenu";
+import { NavBar } from "@organisms/NavBar";
 
 export default function NavBarWrapper() {
   const [isMobile, setIsMobile] = useState<boolean>(false);

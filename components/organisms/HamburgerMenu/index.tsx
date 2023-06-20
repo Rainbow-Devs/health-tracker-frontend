@@ -4,7 +4,7 @@ import { Menu, MenuButton, MenuItem, useMenuStore } from "@ariakit/react";
 import { NavBarLogo } from "@atoms/NavBarLogo";
 import { useRouter } from "next/navigation";
 
-import { MobileMenuImage } from "../images/MobileMenuImage";
+import { MobileMenuImage } from "@images/MobileMenuImage";
 
 const HamburgerMenu: React.FC = () => {
   const menu = useMenuStore();
