@@ -1,6 +1,6 @@
 {
   "name": "wellpath-frontend",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Frontend webapp for WellPath, the Rainbow Devs health tracker application.",
   "repository": "github:Rainbow-Devs/health-tracker-frontend",
   "homepage": "https://github.com/Rainbow-Devs/health-tracker-frontend",
@@ -26,7 +26,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "^18.16.0 || >=20.2.0"
+    "node": "^18.16.0 || >=20.3.0"
   },
   "keywords": [],
   "packageManager": "pnpm@8.6.2",
@@ -47,12 +47,12 @@
     "eslint:fix": "next lint --fix",
     "alex:check": "alex .",
     "format": "pnpm prettier:overwrite",
-    "prettier:check": "prettier --check ./app ./components *.cjs",
-    "prettier:overwrite": "prettier --write ./app ./components *.cjs",
-    "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store",
+    "prettier:check": "prettier --check ./app ./components ./__tests__ *.cjs",
+    "prettier:overwrite": "prettier --write ./app ./components ./__tests__ *.cjs",
+    "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store .husky .swc",
     "git:reset": "git reset --hard HEAD",
     "git:clean": "git clean -d -x -e node_modules -e packages -f",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "^13.4.6",

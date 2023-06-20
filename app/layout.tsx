@@ -15,8 +15,8 @@ export default function RootLayout({
   authModal: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-gradient-to-br from-white to-fitGray-100/50 text-fitGray-900 antialiased dark:from-fitGray-700 dark:to-fitGray-900 dark:text-white">
+    <html lang="en" className="bg-footerBg-light">
+      <body className="bg-gradient-to-br from-white to-slate-100 text-fitGray-900 antialiased dark:from-footerBg-dark dark:to-fitGray-900 dark:text-white">
         <NavBarWrapper />
         {children}
         {authModal}
