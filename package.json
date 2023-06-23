@@ -1,6 +1,6 @@
 {
   "name": "wellpath-frontend",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Frontend webapp for WellPath, the Rainbow Devs health tracker application.",
   "repository": "github:Rainbow-Devs/health-tracker-frontend",
   "homepage": "https://github.com/Rainbow-Devs/health-tracker-frontend",
