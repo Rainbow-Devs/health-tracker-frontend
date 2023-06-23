@@ -16,26 +16,24 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "plugin:tailwindcss/recommended",
     "next/core-web-vitals",
+    "plugin:storybook/recommended",
     "prettier"
   ],
   ignorePatterns: ["/*.cjs", "/node_modules/**/*"],
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
-
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "prettier",
       ],
-
       parserOptions: {
         project: ["./tsconfig.json"],
         ecmaFeatures: {
           jsx: true
         }
       },
-
       rules: {
         "@typescript-eslint/no-explicit-any": "off"
       }
@@ -53,7 +51,6 @@ module.exports = {
     "jest",
     "jest-dom",
     "jsx-a11y",
-    "prettier",
     "react",
     "react-hooks",
     "tailwindcss",

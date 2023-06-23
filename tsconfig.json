@@ -19,14 +19,15 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./", // required by webpack tsconfig extension
     "paths": {
-      "@app/*": ["./app/*"],
-      "@atoms/*": ["./components/atoms/*"],
-      "@helpers/*": ["./components/helpers/*"],
-      "@images/*": ["./components/images/*"],
-      "@molecules/*": ["./components/molecules/*"],
-      "@organisms/*": ["./components/organisms/*"],
-      "@templates/*": ["./components/templates/*"]
+      "@app/*": ["app/*"],
+      "@atoms/*": ["stories/components/atoms/*"],
+      "@helpers/*": ["stories/components/helpers/*"],
+      "@images/*": ["stories/components/images/*"],
+      "@molecules/*": ["stories/components/molecules/*"],
+      "@organisms/*": ["stories/components/organisms/*"],
+      "@templates/*": ["stories/components/templates/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
