@@ -1,19 +1,23 @@
 import { GenericButton } from "@atoms/GenericButton";
 import Link from "next/link";
 
+import { HeroImage } from "@images/HeroImage";
+import Image from "next/image";
+
 export const MarketingHero: React.FC = () => {
   return (
-    <section className="flex flex-col lg:grid lg:grid-cols-12">
-      <div className="col-span-5 grid grid-cols-6 gap-6 py-16">
-        <div className="col-span-4 flex flex-row justify-center gap-6 lg:col-span-3 lg:flex-col">
-          <div className="h-60 w-full border-2 border-fuchsia-800"></div>
-          <div className="h-60 w-full border-2 border-fuchsia-800"></div>
-        </div>
-        <div className="col-span-2 flex flex-col justify-center lg:col-span-3 lg:col-start-4">
-          <div className="h-72 w-full border-2 border-fuchsia-800"></div>
+    <section className="grid grid-cols-12 md:py-10">
+      <div className="col-span-12 p-4 md:col-span-6">
+        <div className="overflow-hidden rounded-lg md:h-[32rem]">
+          <Image
+            src={HeroImage}
+            alt="Six people of different races and genders running in place in a parking lot on a sunny day."
+            placeholder="blur"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
-      <div className="col-span-6 col-start-7 flex flex-col justify-center p-4">
+      <div className="col-span-12 flex flex-col justify-center p-4 md:col-span-6 md:col-start-7">
         <div className="flex flex-col space-y-3">
           <header>
             <h2 className="text-2xl font-bold">
