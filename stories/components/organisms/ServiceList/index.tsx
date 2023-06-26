@@ -5,13 +5,13 @@ export const ServiceList: React.FC = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-white">
+              <span className="mb-2 block text-lg font-semibold">
                 Our Features
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-[40px]">
+              <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
                 What We Offer
               </h2>
-              <p className="text-base text-white">
+              <p className="text-base">
                 We make it easier to track all of your health and fitness goals.
                 Currently, you can log your exercises in the fitness log, count
                 calories burned, and set reminders for upcoming workouts.
@@ -20,7 +20,7 @@ export const ServiceList: React.FC = () => {
           </div>
         </div>
         <div className="grid place-items-stretch gap-6 px-4 lg:grid-cols-3">
-          <div className="col-span-1 rounded-[20px] border-2 border-ctaColor-dark p-7 shadow-md hover:shadow-lg md:px-7 md:pb-12 xl:px-10">
+          <div className="col-span-1 rounded-[20px] p-7 shadow-md dark:border-2 dark:border-ctaColor-dark md:px-7 md:pb-12 xl:px-10">
             <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-ctaColor-dark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,12 +37,12 @@ export const ServiceList: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="mb-3 text-xl font-bold text-white">Fitness Log</h4>
-            <p className="text-white">
+            <h4 className="mb-3 text-xl font-bold">Fitness Log</h4>
+            <p>
               Log your workouts to highlight progress and note improvements.
             </p>
           </div>
-          <div className="col-span-1 rounded-[20px] border-2 border-ctaColor-dark p-7 shadow-md hover:shadow-lg md:px-7 md:pb-12 xl:px-10">
+          <div className="col-span-1 rounded-[20px] p-7 shadow-md dark:border-2 dark:border-ctaColor-dark md:px-7 md:pb-12 xl:px-10">
             <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-ctaColor-dark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,16 +59,14 @@ export const ServiceList: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="mb-3 text-xl font-bold text-white">
-              Calorie Counter
-            </h4>
-            <p className="text-white">
+            <h4 className="mb-3 text-xl font-bold">Calorie Counter</h4>
+            <p>
               Although calories are only one aspect of your health and wellness
               journey, it’s one way to quantify your efforts. Count the number
               of calories burned from any exercise.
             </p>
           </div>
-          <div className="col-span-1 rounded-[20px] border-2 border-ctaColor-dark p-7 shadow-md hover:shadow-lg md:px-7 md:pb-12 xl:px-10">
+          <div className="col-span-1 rounded-[20px] p-7 shadow-md dark:border-2 dark:border-ctaColor-dark md:px-7 md:pb-12 xl:px-10">
             <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-ctaColor-dark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,10 +83,8 @@ export const ServiceList: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="mb-3 text-xl font-bold text-white">Reminders</h4>
-            <p className="text-white">
-              Build a steady fitness schedule by creating reminders.
-            </p>
+            <h4 className="mb-3 text-xl font-bold">Reminders</h4>
+            <p>Build a steady fitness schedule by creating reminders.</p>
           </div>
         </div>
       </div>
