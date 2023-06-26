@@ -1,12 +1,12 @@
 import { MarketingPage } from "@templates/MarketingPage";
 import { MarketingHero } from "@organisms/MarketingHero";
-import { ServiceList } from "@organisms/ServiceList";
+import { ServicesList } from "@organisms/ServicesList";
 
 export default function Home() {
   return (
     <MarketingPage>
       <MarketingHero />
-      <ServiceList />
+      <ServicesList />
     </MarketingPage>
   );
 }

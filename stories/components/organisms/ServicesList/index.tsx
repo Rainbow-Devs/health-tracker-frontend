@@ -1,17 +1,17 @@
-export const ServiceList: React.FC = () => {
+export const ServicesList: React.FC = () => {
   return (
     <section className="pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
-            <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+            <div className="mx-auto mb-12 max-w-screen-md text-center lg:mb-20">
               <span className="mb-2 block text-lg font-semibold">
                 Our Features
               </span>
               <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
                 What We Offer
               </h2>
-              <p className="text-base">
+              <p>
                 We make it easier to track all of your health and fitness goals.
                 Currently, you can log your exercises in the fitness log, count
                 calories burned, and set reminders for upcoming workouts.
@@ -19,7 +19,7 @@ export const ServiceList: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="grid place-items-stretch gap-6 px-4 lg:grid-cols-3">
+        <div className="grid grid-cols-1 place-items-stretch gap-6 px-4 md:grid-cols-3">
           <div className="col-span-1 rounded-[20px] p-7 shadow-md dark:border-2 dark:border-ctaColor-dark md:px-7 md:pb-12 xl:px-10">
             <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-ctaColor-dark">
               <svg
@@ -43,14 +43,14 @@ export const ServiceList: React.FC = () => {
             </p>
           </div>
           <div className="col-span-1 rounded-[20px] p-7 shadow-md dark:border-2 dark:border-ctaColor-dark md:px-7 md:pb-12 xl:px-10">
-            <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-ctaColor-dark">
+            <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-ctaColor-light text-white dark:bg-ctaColor-dark dark:text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="black"
-                className="h-9 w-9"
+                stroke="currentColor"
+                className="h-8 w-8"
               >
                 <path
                   stroke-linecap="round"
@@ -91,3 +91,5 @@ export const ServiceList: React.FC = () => {
     </section>
   );
 };
+
+export default ServicesList;
