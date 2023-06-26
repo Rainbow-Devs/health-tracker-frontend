@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ServiceList } from ".";
+import { ServicesList } from ".";
 
-const meta: Meta<typeof ServiceList> = {
-  title: "Organisms/ServiceList",
-  component: ServiceList,
+const meta: Meta<typeof ServicesList> = {
+  title: "Organisms/ServicesList",
+  component: ServicesList,
   parameters: {
     nextjs: {
       appDirectory: true
@@ -18,7 +18,7 @@ const meta: Meta<typeof ServiceList> = {
 
 export default meta;
 
-type Story = StoryObj<typeof ServiceList>;
+type Story = StoryObj<typeof ServicesList>;
 
 export const Primary: Story = {
   args: {
