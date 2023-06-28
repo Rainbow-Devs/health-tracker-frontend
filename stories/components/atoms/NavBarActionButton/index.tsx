@@ -11,7 +11,8 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        linkStyle: "bg-none text-inherit hover:opacity-60",
+        linkStyle:
+          "bg-none text-inherit hover:bg-ctaColor-light/30 dark:hover:bg-ctaColor-dark/30",
         buttonStyle:
           "bg-ctaColor-light font-bold text-white hover:opacity-90 dark:bg-ctaColor-dark dark:text-footerBg-dark"
       },
