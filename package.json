@@ -1,6 +1,6 @@
 {
   "name": "wellpath-frontend",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Frontend webapp for WellPath, the Rainbow Devs health tracker application.",
   "repository": "github:Rainbow-Devs/health-tracker-frontend",
   "homepage": "https://github.com/Rainbow-Devs/health-tracker-frontend",
@@ -46,7 +46,7 @@
     "wellness"
   ],
   "main": ".next/standalone/server.js",
-  "packageManager": "pnpm@8.6.3",
+  "packageManager": "pnpm@8.6.5",
   "type": "module",
   "husky": {
     "hooks": {
@@ -79,7 +79,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@ariakit/react": "^0.2.10",
+    "@ariakit/react": "^0.2.11",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-interactions": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",

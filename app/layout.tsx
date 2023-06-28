@@ -1,8 +1,10 @@
+import { Metadata } from "next";
+
 import "./globals.css";
 import { NavBar } from "@organisms/NavBar";
 import { PageFooter } from "@organisms/PageFooter";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "WellPath",
   description: "A health tracker application created by the Rainbow Devs."
 };
