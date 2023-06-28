@@ -1,0 +1,52 @@
+/*
+.button {
+  display: flex;
+  height: 2.5rem;
+  touch-action: none;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: hsl(204 100% 40%);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: hsl(204 20% 100%);
+  text-decoration-line: none;
+}
+
+.button:hover {
+  background-color: hsl(204 100% 32%);
+}
+
+.button[aria-disabled="true"] {
+  opacity: 0.5;
+}
+
+.button:focus-visible,
+.button[data-focus-visible] {
+  outline: 2px solid hsl(204 100% 40%);
+  outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .button {
+    gap: 0.5rem;
+  }
+}
+
+*/
+
+.separator {
+  @apply h-0 w-full my-2 border-t border-[hsl(204_20%_88%)] dark:border-[hsl(204_3%_28%)];
+}
+.menu {
+  @apply relative z-50 flex max-h-[var(--popover-available-height)] min-w-[180px] flex-col overflow-auto overscroll-contain border bg-white text-[hsl(204_10%_10%)] shadow-lg p-2 rounded-lg border-solid border-[hsl(204_20%_88%)] outline-none dark:bg-[hsl(204_3%_18%)] dark:text-white dark:shadow-[0_10px_15px_-3px_rgb(0_0_0_/_0.25),0_4px_6px_-4px_rgb(0_0_0_/_0.1)] dark:border-[hsl(204_3%_26%)];
+}
+.menu-item {
+  @apply flex cursor-default items-center gap-2 rounded p-2 scroll-m-2 disabled:opacity-25 outline-none active:bg-[hsl(204_100%_40%)] active:text-white;
+}
