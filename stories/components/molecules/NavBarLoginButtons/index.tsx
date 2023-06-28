@@ -113,7 +113,7 @@ export const NavBarLoginButtons: React.FC = ({ userId }: LoginButtonProps) => {
   return (
     <div className="flex flex-row justify-end space-x-1">
       <NavBarActionButton variant="buttonStyle" href="/login">
-        Get Started
+        Log In
       </NavBarActionButton>
     </div>
   );
