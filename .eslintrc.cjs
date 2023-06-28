@@ -35,7 +35,8 @@ module.exports = {
         }
       },
       rules: {
-        "@typescript-eslint/no-explicit-any": "off"
+        "@typescript-eslint/require-await": "off",
+        "github/no-then": "off"
       }
     }
   ],

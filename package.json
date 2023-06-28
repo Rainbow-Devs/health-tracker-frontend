@@ -1,6 +1,6 @@
 {
   "name": "wellpath-frontend",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Frontend webapp for WellPath, the Rainbow Devs health tracker application.",
   "repository": "github:Rainbow-Devs/health-tracker-frontend",
   "homepage": "https://github.com/Rainbow-Devs/health-tracker-frontend",
@@ -23,12 +23,12 @@
       "url": "https://github.com/justEstif"
     },
     {
-      "name": "Spencer Wohlers",
-      "url": "https://github.com/seidior"
-    },
-    {
       "name": "Paryssa Khazaie",
       "url": "https://github.com/Paryssatis"
+    },
+    {
+      "name": "Spencer Wohlers",
+      "url": "https://github.com/seidior"
     }
   ],
   "license": "MIT",
@@ -80,13 +80,13 @@
   },
   "devDependencies": {
     "@ariakit/react": "^0.2.10",
-    "@storybook/addon-essentials": "^7.0.23",
-    "@storybook/addon-interactions": "^7.0.23",
-    "@storybook/addon-links": "^7.0.23",
+    "@storybook/addon-essentials": "^7.0.24",
+    "@storybook/addon-interactions": "^7.0.24",
+    "@storybook/addon-links": "^7.0.24",
     "@storybook/addon-styling": "^1.3.1",
-    "@storybook/blocks": "^7.0.23",
-    "@storybook/nextjs": "^7.0.23",
-    "@storybook/react": "^7.0.23",
+    "@storybook/blocks": "^7.0.24",
+    "@storybook/nextjs": "^7.0.24",
+    "@storybook/react": "^7.0.24",
     "@storybook/testing-library": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -122,10 +122,10 @@
     "pretty-quick": "^3.1.3",
     "react-icons": "^4.10.1",
     "remark-gfm": "^3.0.1",
-    "storybook": "^7.0.23",
+    "storybook": "^7.0.24",
     "tailwind-merge": "^1.13.2",
     "tailwindcss": "^3.3.2",
     "tsconfig-paths-webpack-plugin": "^4.0.1",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.5"
   }
 }
