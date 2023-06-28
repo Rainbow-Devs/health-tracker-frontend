@@ -39,7 +39,7 @@ export const NavBarLoginButtons: React.FC = ({ userId }: LoginButtonProps) => {
             <Menu
               store={menu}
               gutter={8}
-              className="relative z-50 flex max-h-[var(--popover-available-height)] min-w-[180px] flex-col overflow-auto overscroll-contain rounded-lg border border-solid border-slate-500 bg-white p-2 text-fitGray-900 shadow-lg outline-none dark:bg-gray-950 dark:text-white"
+              className="relative z-50 flex max-h-[var(--popover-available-height)] min-w-[180px] flex-col overflow-auto overscroll-contain rounded-lg border border-solid border-slate-300 bg-white p-2 text-fitGray-900 shadow-lg outline-none dark:border-slate-500 dark:bg-gray-950 dark:text-white"
             >
               <NavBarActionButton
                 variant="linkStyle"
@@ -48,7 +48,7 @@ export const NavBarLoginButtons: React.FC = ({ userId }: LoginButtonProps) => {
               >
                 My Profile
               </NavBarActionButton>
-              <MenuSeparator className="my-2 h-0 w-full border-t border-[hsl(204_20%_88%)] dark:border-[hsl(204_3%_28%)]" />
+              <MenuSeparator className="my-2 h-0 w-full border-t border-slate-300 dark:border-slate-700" />
               <NavBarActionButton
                 variant="linkStyle"
                 className={menuItemStyles}
@@ -70,7 +70,7 @@ export const NavBarLoginButtons: React.FC = ({ userId }: LoginButtonProps) => {
               >
                 Reminders
               </NavBarActionButton>
-              <MenuSeparator className="my-2 h-0 w-full border-t border-[hsl(204_20%_88%)] dark:border-[hsl(204_3%_28%)]" />
+              <MenuSeparator className="my-2 h-0 w-full border-t border-slate-300 dark:border-slate-700" />
               <NavBarActionButton
                 variant="buttonStyle"
                 className={menuItemStyles}

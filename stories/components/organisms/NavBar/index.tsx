@@ -7,7 +7,7 @@ export const NavBar: React.FC = () => {
       <div className="container flex h-14 max-w-screen-lg flex-row items-center px-4">
         <NavBarLogo />
         <nav className="w-3/4 lg:w-2/3">
-          <NavBarLoginButtons userId={4} />
+          <NavBarLoginButtons />
         </nav>
       </div>
     </header>
