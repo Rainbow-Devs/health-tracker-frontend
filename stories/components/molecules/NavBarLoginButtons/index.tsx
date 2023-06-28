@@ -111,7 +111,7 @@ export const NavBarLoginButtons: React.FC = ({ userId }: LoginButtonProps) => {
   }
 
   return (
-    <div className="hidden md:flex md:flex-row md:justify-between md:space-x-1">
+    <div className="hidden md:flex md:flex-row md:justify-end md:space-x-1">
       <NavBarActionButton variant="buttonStyle" href="/login">
         Get Started
       </NavBarActionButton>
