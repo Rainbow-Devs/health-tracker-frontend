@@ -18,6 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-footerBg-light">
+      <head>
+        <link rel="icon" href="/meta/favicon.ico" sizes="any" />
+        <link rel="icon" href="/meta/icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/meta/icon.png" type="image/png" sizes="64x64" />
+      </head>
       <body className="bg-gradient-to-br from-white to-slate-100 text-fitGray-900 antialiased dark:from-footerBg-dark dark:to-fitGray-900 dark:text-white">
         <NavBar />
         {children}
