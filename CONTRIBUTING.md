@@ -42,7 +42,7 @@ issues”)
 ### Explain contributions you are NOT looking for (if any).
 
 Again, defining this up front means less work for you. If someone ignores your
-guide and submits something you don’t want, you can simply close it and point to
+guide and submits something you don’t want, you are welcome to close it and point to
 your policy.
 
 > Please, don't use the issue tracker for [support questions]. Check whether the
@@ -60,7 +60,7 @@ your policy.
 
 ### Set expectations for behavior (yours, and theirs).
 
-This includes not just how to communicate with others (being respectful,
+This includes not only how to communicate with others (being respectful,
 considerate, etc) but also technical responsibilities (importance of testing,
 project dependencies, etc). Mention and link to your code of conduct, if you
 have one.
