@@ -1,0 +1,22 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "goal_type": 1,
+      "description": "Lose weight",
+      "is_completed": false,
+      "created_at": "2022-01-01T10:00:00Z",
+      "updated_at": "2022-01-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "goal_type": 2,
+      "description": "Run a marathon",
+      "is_completed": true,
+      "created_at": "2022-01-02T11:00:00Z",
+      "updated_at": "2022-01-02T11:00:00Z"
+    }
+  ]
+}

@@ -64,8 +64,9 @@
     "eslint:fix": "next lint --fix",
     "alex:check": "alex .",
     "format": "pnpm prettier:overwrite",
-    "prettier:check": "prettier --check ./app ./stories ./__tests__ *.cjs",
-    "prettier:overwrite": "prettier --write ./app ./stories ./__tests__ *.cjs",
+    "mock": "node middlewares/mock-server.js",
+    "prettier:check": "prettier --check ./app ./components ./__tests__ *.cjs",
+    "prettier:overwrite": "prettier --write ./app ./components ./__tests__ *.cjs",
     "clean": "rm -rf .next node_modules pnpm-lock.yaml package-lock.json yarn.lock .pnpm-store .husky .swc",
     "git:reset": "git reset --hard HEAD",
     "git:clean": "git clean -d -x -e node_modules -e packages -f",
@@ -76,7 +77,8 @@
   "dependencies": {
     "next": "^13.4.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uuid": "9.0.0"
   },
   "devDependencies": {
     "@ariakit/react": "^0.2.11",
