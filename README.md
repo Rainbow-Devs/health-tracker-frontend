@@ -92,3 +92,103 @@ To learn more about Next.js, take a look at the following resources:
 You can check out
 [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
 feedback and contributions are welcome!
+
+## Mock Server Documentation
+
+The mock server provides a simulated backend for various API endpoints in your Next.js project. It allows you to develop and test different functionality without the need for a real backend server.
+
+### API Endpoints
+
+#### Retrieve User Data
+
+- **Method**: `GET`
+- **Endpoint**: `/api/users`
+- **Response**: Returns an array of user objects in JSON format.
+
+#### Register a New User
+
+- **Method**: `POST`
+- **Endpoint**: `/api/users`
+- **Request Body**: JSON object representing the new user.
+- **Response**: Returns the newly created user object, including a unique ID, UUID, and timestamps.
+
+#### Update User Data
+
+- **Method**: `PUT`
+- **Endpoint**: `/api/users/:id`
+- **Request Body**: JSON object representing the updated user data.
+- **Response**: Returns the updated user object.
+
+#### Retrieve Activity Data
+
+- **Method**: `GET`
+- **Endpoint**: `/api/activities`
+- **Response**: Returns an array of activity objects in JSON format.
+
+#### Add a New Activity
+
+- **Method**: `POST`
+- **Endpoint**: `/api/activities`
+- **Request Body**: JSON object representing the new activity.
+- **Response**: Returns the newly created activity object.
+
+#### Update Activity Data
+
+- **Method**: `PUT`
+- **Endpoint**: `/api/activities/:id`
+- **Request Body**: JSON object representing the updated activity data.
+- **Response**: Returns the updated activity object.
+
+#### Retrieve Goal Data
+
+- **Method**: `GET`
+- **Endpoint**: `/api/goals`
+- **Response**: Returns an array of goal objects in JSON format.
+
+#### Add a New Goal
+
+- **Method**: `POST`
+- **Endpoint**: `/api/goals`
+- **Request Body**: JSON object representing the new goal.
+- **Response**: Returns the newly created goal object.
+
+#### Update Goal Data
+
+- **Method**: `PUT`
+- **Endpoint**: `/api/goals/:id`
+- **Request Body**: JSON object representing the updated goal data.
+- **Response**: Returns the updated goal object.
+
+#### Retrieve Reminder Data
+
+- **Method**: `GET`
+- **Endpoint**: `/api/reminders`
+- **Response**: Returns an array of reminder objects in JSON format.
+
+#### Add a New Reminder
+
+- **Method**: `POST`
+- **Endpoint**: `/api/reminders`
+- **Request Body**: JSON object representing the new reminder.
+- **Response**: Returns the newly created reminder object.
+
+#### Update Reminder Data
+
+- **Method**: `PUT`
+- **Endpoint**: `/api/reminders/:id`
+- **Request Body**: JSON object representing the updated reminder data.
+- **Response**: Returns the updated reminder object.
+
+### Usage
+
+To interact with the mock server, make HTTP requests to the appropriate endpoints using your preferred method (e.g., fetch, axios, etc.). Pass any required request parameters or data in the request body and handle the response accordingly.
+
+Please refer to the specific endpoint details mentioned above for the expected request method, endpoint URL, request body format, and response format.
+
+### Mock Server Setup
+
+1. Ensure that the `mockServer.js` file is included in your project's root directory.
+2. Install the required dependencies by running `npm install`.
+3. Start the mock server by running `npm run mock`.
+4. The mock server will be running on `http://localhost:8000`.
+
