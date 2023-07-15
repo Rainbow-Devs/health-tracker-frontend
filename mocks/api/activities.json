@@ -1,0 +1,22 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "type": 1,
+      "user_description": "Running",
+      "duration": 30,
+      "difficulty": 3,
+      "created_at": "2022-01-01T10:00:00Z",
+      "updated_at": "2022-01-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "user_description": "Swimming",
+      "duration": 45,
+      "difficulty": 2,
+      "created_at": "2022-01-02T11:00:00Z",
+      "updated_at": "2022-01-02T11:00:00Z"
+    }
+  ]
+}
