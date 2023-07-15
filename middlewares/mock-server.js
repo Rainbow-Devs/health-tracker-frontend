@@ -32,40 +32,106 @@ function handleGetRequest(req, res, pathname) {
   }
 }
 
-// Handle POST request for '/api/users' endpoint
-function handlePostUsers(req, res) {
+function handleDeleteRequest(req, res, pathname) {
+  const mockDataPath = join(process.cwd(), "mocks");
+  const apiPath = join(mockDataPath, `${pathname}.json`);
+
+  try {
+    const { [pathname.slice(5)]: items } = readJSONFile(apiPath);
+
+    const id = parseInt(pathname.split("/")[3], 10);
+    const dataIndex = items.findIndex(item => item.id === id);
+
+    if (dataIndex !== -1) {
+      items.splice(dataIndex, 1);
+      writeJSONFile(apiPath, { [pathname.slice(5)]: items });
+
+      res.statusCode = 200;
+      res.end("Data deleted successfully");
+    } else {
+      res.statusCode = 404;
+      res.end("Data not found");
+    }
+  } catch (error) {
+    console.error(error);
+    res.statusCode = 500;
+    res.end("Internal Server Error");
+  }
+}
+
+// Handle POST request for API endpoints
+function handlePostRequest(req, res, pathname, dataKey) {
   let body = "";
   req.on("data", chunk => {
     body += chunk.toString();
   });
   req.on("end", () => {
-    const newUser = JSON.parse(body);
+    const newData = JSON.parse(body);
 
     const mockDataPath = join(process.cwd(), "mocks", "api");
-    const apiPath = join(mockDataPath, "users.json");
+    const apiPath = join(mockDataPath, `${pathname}.json`);
 
     try {
-      const { users } = readJSONFile(apiPath);
+      const { [dataKey]: items } = readJSONFile(apiPath);
 
-      const newUserId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
-      const newUuid = uuidv4();
+      const newId = items.length > 0 ? items[items.length - 1].id + 1 : 1;
       const currentTime = new Date().toISOString();
 
-      const newUserWithFields = {
-        id: newUserId,
-        uuid: newUuid,
+      const newDataWithFields = {
+        id: newId,
         created_at: currentTime,
         updated_at: currentTime,
-        ...newUser
+        ...newData
       };
 
-      users.push(newUserWithFields);
+      items.push(newDataWithFields);
 
-      writeJSONFile(apiPath, { users });
+      writeJSONFile(apiPath, { [dataKey]: items });
 
       res.setHeader("Content-Type", "application/json");
       res.statusCode = 201;
-      res.end(JSON.stringify(newUserWithFields));
+      res.end(JSON.stringify(newDataWithFields));
+    } catch (error) {
+      console.error(error);
+      res.statusCode = 500;
+      res.end("Internal Server Error");
+    }
+  });
+}
+
+// Handle PUT request for API endpoints
+function handlePutRequest(req, res, pathname, dataKey) {
+  let body = "";
+  req.on("data", chunk => {
+    body += chunk.toString();
+  });
+  req.on("end", () => {
+    const editedData = JSON.parse(body);
+
+    const mockDataPath = join(process.cwd(), "mocks", "api");
+    const apiPath = join(mockDataPath, `${pathname}.json`);
+
+    try {
+      const { [dataKey]: items } = readJSONFile(apiPath);
+
+      const editedId = editedData.id;
+      const currentTime = new Date().toISOString();
+
+      const editedDataWithFields = {
+        id: editedId,
+        created_at: currentTime,
+        updated_at: currentTime,
+        ...editedData
+      };
+
+      const dataIndex = items.findIndex(item => item.id === editedId);
+      items[dataIndex] = editedDataWithFields;
+
+      writeJSONFile(apiPath, { [dataKey]: items });
+
+      res.setHeader("Content-Type", "application/json");
+      res.statusCode = 201;
+      res.end(JSON.stringify(editedDataWithFields));
     } catch (error) {
       console.error(error);
       res.statusCode = 500;
@@ -91,7 +157,35 @@ export default function mockServer(req, res) {
 
     case "POST":
       if (pathname === "/api/users") {
-        handlePostUsers(req, res);
+        handlePostRequest(req, res, "users", "users");
+      } else if (pathname === "/api/goals") {
+        handlePostRequest(req, res, "goals", "goals");
+      } else if (pathname === "/api/goal_types") {
+        handlePostRequest(req, res, "goal_types", "goal_types");
+      } else if (pathname === "/api/reminders") {
+        handlePostRequest(req, res, "reminders", "reminders");
+      } else if (pathname === "/api/activities"){
+        handlePostRequest(req, res, "activities", "activities");
+      }
+      else {
+        res.statusCode = 404;
+        res.end("Not Found");
+      }
+      break;
+
+    case "PUT":
+      if (pathname === "/api/goals") {
+        handlePutRequest(req, res, "goals", "goals");
+      } else if (pathname === "/api/reminders") {
+        handlePutRequest(req, res, "reminders", "reminders");
+      } else if (pathname === "/api/users") {
+        handlePutRequest(req, res, "users", "users");
+      }
+      break;
+
+    case "DELETE":
+      if (apiRegex.test(pathname)) {
+        handleDeleteRequest(req, res, pathname);
       } else {
         res.statusCode = 404;
         res.end("Not Found");
