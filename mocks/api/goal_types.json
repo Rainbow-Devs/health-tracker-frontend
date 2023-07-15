@@ -1,0 +1,16 @@
+{
+  "goal_types": [
+    {
+      "id": 1,
+      "name": "Fitness"
+    },
+    {
+      "id": 2,
+      "name": "Career"
+    },
+    {
+      "id": 3,
+      "name": "Education"
+    }
+  ]
+}
