@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { PersonalInformationCard } from ".";
 
 const meta: Meta<typeof PersonalInformationCard> = {
-  title: "Molecules/PersonalInformationCard",
+  title: "Organisms/PersonalInformationCard",
   component: PersonalInformationCard,
   parameters: {
     nextjs: {
